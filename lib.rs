@@ -95,7 +95,9 @@ pub mod koins {
 
         /// Adds `coins` to the `account`.
         ///
-        /// if the account is not already in the storage, will be set with `Zero`.
+        /// if the account is not already in the storage, will be set with `coins`.
+        ///
+        /// Returns the total coins the account owns.
         ///
         /// ### Note
         /// In case of overflow the account's coins will be set to the maximum value.
